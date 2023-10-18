@@ -44,9 +44,10 @@ router.post('/employees', (req, res) => {
 		.collection('employees')
 		.insertOne({ firstName, lastName })
 		.then(() => {
-			res.json({ message: 'OK' }).catch(err => {
-				res.status(500).json({ message: err })
-			})
+			res.json({ message: 'OK' })
+		})
+		.catch(err => {
+			res.status(500).json({ message: err })
 		})
 })
 
