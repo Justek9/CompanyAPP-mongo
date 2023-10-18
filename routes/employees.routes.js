@@ -1,6 +1,6 @@
 const express = require('express')
 const router = express.Router()
-const ObjectId = require('mongodb').ObjectId
+const Employee = require('../models/employee.model')
 
 router.get('/employees', (req, res) => {
 	req.db
