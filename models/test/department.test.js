@@ -1,4 +1,4 @@
-const Department = require('../department.model.js')
+const Department = require('../department.model')
 const expect = require('chai').expect
 const mongoose = require('mongoose')
 
@@ -43,7 +43,6 @@ describe('Department', () => {
 			try {
 				await dep.validate(name)
 			} catch (err) {
-				// console.log('ERROR', err)
 				error = err
 			}
 
