@@ -49,8 +49,4 @@ describe('Department', () => {
 			expect(error).to.not.exist
 		}
 	})
-
-	after(() => {
-		mongoose.models = {}
-	})
 })
